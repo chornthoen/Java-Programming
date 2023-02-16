@@ -1,7 +1,5 @@
 package abstract_shape;
 
-import javax.swing.*;
-
 public class TestShape {
 
 
