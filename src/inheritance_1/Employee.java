@@ -34,6 +34,7 @@ public class Employee extends Person {
         setId(id);
         setHour(hour);
         setRate(rate);
+
     }
     public double getSalary(){
         return getHour()*getRate();

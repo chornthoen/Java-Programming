@@ -3,6 +3,17 @@ package abstract_shape;
 public class Circle extends Shape{
     private double radius;
 
+    public Circle() {
+        super("red");
+        this.radius = 1.0;
+    }
+
+    public Circle(String color , double radius) {
+        super(color);
+        this.radius = radius;
+    }
+
+
     public void setRadius(double radius) {
         this.radius = radius;
     }
@@ -10,12 +21,7 @@ public class Circle extends Shape{
     public double getRadius() {
         return radius;
     }
-    public Circle(){
-        setRadius(2.0);
-    }
-    public Circle(double radius){
-        setRadius(radius);
-    }
+
 
     @Override
     public double getParameter() {
@@ -27,6 +33,7 @@ public class Circle extends Shape{
         return 14.3*getRadius()*getRadius();
     }
     public String toString(){
-        return "Circle : Radius= "+getRadius()+",Parameter= "+getParameter()+",Area= "+getArea();
+        return "Circle["+ super.toString()+",radius ="+getRadius()+"" +
+                ",parameter ="+getParameter()+",area ="+getArea()+"]";
     }
 }

@@ -5,6 +5,20 @@ public class Triangle extends Shape {
     private double b;
     private double c;
 
+    public Triangle(String color , double a , double b , double c) {
+        super(color);
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    //constructor default
+    public Triangle() {
+        super("red");
+        this.a = 1.0;
+        this.b = 1.0;
+        this.c = 1.0;
+    }
+
     public double getA() {
         return a;
     }
@@ -29,17 +43,9 @@ public class Triangle extends Shape {
         this.c = c;
     }
 
-    public Triangle() {
-        a = 3;
-        b = 4;
-        c = 5;
-    }
 
-    public Triangle(double a, double b, double c) {
-        setA(a);
-        setB(b);
-        setC(c);
-    }
+
+    
 
     @Override
     public double getParameter() {
@@ -53,7 +59,7 @@ public class Triangle extends Shape {
     }
 
     public String toString() {
-        return "Triangle : A= " + getA() + ",B= " + getB() + ",C= " + getC() + ",Parameter= "
-                + getParameter() + ",Area =" + getArea();
+        return "Triangle[Shape[color = " + getColor() + "],a = " + getA() + ",b = " + getB() + ",c = " + getC() +
+                ",parameter = " + getParameter() + ",area = " + getArea() + "]";
     }
 }
