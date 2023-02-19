@@ -26,10 +26,15 @@ public class Main {
 //        System.out.println("customer's discount is: "+invoice.getCustomerDiscount());
 //        System.out.printf("amount after discount is: %.2f%n",invoice.getAmountAfterDiscount());
 
-        CustomerTime customerTime = new CustomerTime(12,00,00);
-        System.out.println(customerTime);
+//        CustomerTime customerTime = new CustomerTime(12,00,00);
+//        System.out.println(customerTime);
+//
+//        System.out.println(customerTime.previousSecond(1));
 
-        System.out.println(customerTime.previousSecond(1));
+        CustomerTimes customerTimes = new CustomerTimes();
+        CustomerTimes customerTimes1 = new CustomerTimes(12,30,50);
+        System.out.println(customerTimes1);
+        System.out.println(customerTimes);
 
 
 
